@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-import sys
+if __name__ == "__main__":
+    import sys
 
-def arguments():
     argv = sys.argv[1:]
     nargs = len(argv)
 
@@ -13,5 +13,3 @@ def arguments():
 
         for i, arg in enumerate(argv, start = 1):
             print(f"{i}: {arg}")
-
-arguments()
