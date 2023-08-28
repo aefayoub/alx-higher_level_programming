@@ -3,7 +3,7 @@
 def safe_print_division(a, b):
     try:
         rslt = (a / b)
-    except:
+    except Exception:
         rslt = None
     finally:
         print("Inside result: {}".format(rslt))
