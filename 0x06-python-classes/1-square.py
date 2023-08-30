@@ -1,11 +1,29 @@
 #!/usr/bin/python3
+
+"""
+iThis is a module-level docstring. It provides an overview of the class square.
+"""
+
+
 class Square:
-    """Class Square that defines a square object
     """
+    The Square class represents a square shape.
+
+    Attributes:
+        __size (int): The size of the square's sides.
+
+    Methods:
+        __init__(self, size): Initializes a new Square instance.
+
+    Note:
+        Double underscores before a variable or method name.
+    """
+
     def __init__(self, size):
-        """Initialize method that stores the size of the square
+        """
+        Initializes a new Square instance.
 
         Args:
-            param1 (int): size of the square
+            size (int): The size of the square's sides.
         """
         self.__size = size
