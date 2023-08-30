@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 """
-This is a module-level docstring. It provides an overview of the purpose and contents of this Python script.
+This is a module-level It provides an overview of the class square.
 """
+
 
 class Square:
     """
