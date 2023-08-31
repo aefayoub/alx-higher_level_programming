@@ -50,7 +50,7 @@ class Node:
         - TypeError: If the value is not an integer.
         """
         if not isinstance(value, int):
-            raise TypeError("datamust be an integer")
+            raise TypeError("data must be an integer")
         self.__data = value
 
     @property
