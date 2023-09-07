@@ -25,7 +25,7 @@ def matrix_divided(matrix, div):
 
 
     """
-    
+
     if not type(div) in (int, float):
         raise TypeError("div must be a number")
 
