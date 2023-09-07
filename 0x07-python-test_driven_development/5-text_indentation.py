@@ -19,10 +19,9 @@ def text_indentation(text):
         TypeError: If text is not a string
     """
 
-
     if type(text) is not str:
         raise TypeError("text must be a string")
-    
+
     txt = text[:]
     for p in ".?:":
         list_text = txt.split(p)
