@@ -6,7 +6,11 @@ Module based on Module 5
 
 
 class BaseGeometry:
-    """Empty class"""
-    def area(self):
-        raise Exception("area() is not implemented")
+    """Class contains area function"""
 
+    def area(self):
+        """
+        raise exception
+        """
+
+        raise Exception("area() is not implemented")
