@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 
-class Student:
+"""
+Module student to json.
+"""
 
+
+class Student:
+    """Class student"""
     def __init__(self, first_name, last_name, age):
 
         self.first_name = first_name
@@ -9,6 +14,7 @@ class Student:
         self.age = age
     
     def to_json(self, attrs=None):
+        """Function returns json"""
 
         obj = self.__dict__.copy()
         if type(attrs) is list:
