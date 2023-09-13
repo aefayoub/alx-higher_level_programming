@@ -12,7 +12,7 @@ class Student:
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
-    
+
     def to_json(self, attrs=None):
         """Function returns json"""
 
@@ -27,7 +27,7 @@ class Student:
 
             for iatr in range(len(attrs)):
                 for satr in obj:
-                    if attrs[iatr] ==satr:
+                    if attrs[iatr] == satr:
                         d_list[satr] = obj[satr]
             return d_list
 
