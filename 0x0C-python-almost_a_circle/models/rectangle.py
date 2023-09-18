@@ -36,7 +36,7 @@ class Rectangle(Base):
     def height(self):
         """height getter"""
         return self.__height
- 
+
     @height.setter
     def height(self, value):
         """height setter"""
@@ -45,7 +45,7 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
-     
+
     @property
     def x(self):
         """ x getter """
@@ -73,7 +73,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be > 0")
         self.__y = value
-    
+
     def area(self):
         """ returns the area of the rectangle object """
         return self.width * self.height
@@ -86,3 +86,22 @@ class Rectangle(Base):
             rectangle += ("#" * self.width) + "\n"
 
         print(rectangle, end="")
+
+    def __str__(self):
+        """method so that it returns [Rectangle] informations"""
+        str_rectangle = "[Rectangle]"
+        str_id = " ({}) ".format(self.id)
+        str_x_y = "{}/{} - ".format(self.x, self.y)
+        str_size = "{}/{}".format(self.width, self.height)
+
+        return str_rectangle + str_id + str_x_y + str_size
+
+    def update(self, *args, **kwargs):  # add **kwargs
+        """method that assigns an argument to each attribute"""
+        if args is not None and len(args) != 0:
+            attr = ['id', 'width', 'height', 'x', 'y']
+            for i in range(len(args)):
+                setattr(self, attr[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
