@@ -23,3 +23,14 @@ class Square(Rectangle):
         str_size = "{}/{}".format(self.width, self.height)
 
         return "[Square]" + str_id + str_x_y + str_size
+
+    @property
+    def size(self):
+        """ size getter """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """ size setter """
+        self.width = value
+        self.height = value
