@@ -4,6 +4,7 @@ import unittest
 from models.rectangle import Rectangle  # Adjust the import path as needed
 from io import StringIO
 from models.base import Base
+from unittest.mock import patch
 
 """ Module test Rectangle class functions"""
 
@@ -22,7 +23,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(new.height, 1)
         self.assertEqual(new.x, 0)
         self.assertEqual(new.y, 0)
-        self.assertEquail(new.id, 1)
+        self.assertEqual(new.id, 1)
 
     def test_new_rectangle_2(self):
         """ Test new rectangle with all attrs """
