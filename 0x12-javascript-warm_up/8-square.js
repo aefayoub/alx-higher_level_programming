@@ -3,11 +3,11 @@ const lenArray = parseInt(process.argv[2]);
 if (Number.isNaN(lenArray)) {
   console.log('Missing size1');
 } else {
-  for (let i = 0; i < lenArray; i++) {
+  for (let i = 0, x; i < lenArray; i++) {
     x = '';
     for (let j = 0; j < lenArray; j++) {
-      x += 'x';
+      x += 'X';
     }
-      console.log(x);
+    console.log(x);
   }
 }
