@@ -16,16 +16,16 @@ class Rectangle {
       console.log(x);
     }
   }
-  
+
   rotate () {
     const permu = this.height;
     this.height = this.width;
     this.width = permu;
   }
- 
+
   double () {
-   this.width *= 2;
-   this.height *= 2;
+    this.width *= 2;
+    this.height *= 2;
   }
 }
 
