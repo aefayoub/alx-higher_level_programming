@@ -9,5 +9,5 @@ exports.esrever = function (list) {
     i++;
     len--;
   }
-  return list
+  return list;
 };
