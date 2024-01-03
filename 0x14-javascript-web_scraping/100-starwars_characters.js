@@ -7,7 +7,7 @@ req(url, function (error, response, body) {
     const reslt = JSON.parse(body);
     const charac = reslt.characters;
     for (let i = 0; i < charac.length; i++) {
-      req(charac[i], function (error, response, body){
+      req(charac[i], function (error, response, body) {
         if (error == null) {
           console.log(JSON.parse(body).name);
         }
